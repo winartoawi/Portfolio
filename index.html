@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Winarto Wijaya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hamburger Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Winarto Wijaya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="./assets/profile-pic.png" alt="winarto wijaya profile picture" /> -->
+        <img src="./assets/profile-pic-awi.png" alt="winarto wijaya profile picture" style="border-radius: 30%" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, my name is</p>
+        <h1 class="title">Winarto Wijaya</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-WinartoWijaya.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon" onclick="location.href='https://id.linkedin.com/in/winartowijaya?trk=public_profile_browsemap'" />
+          <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/winartoawi'" />
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./index.html#projects'" />
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2020 Oct</h2>
+              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+            </div>
+            <article>
+              <img src="./assets/education.png" alt="education icon" class="education-icon" />
+              <img src="./assets/c-.png" alt="Experience icon" class="icon" />
+              <img src="./assets/html.png" alt="Experience icon" class="icon" />
+              <img src="./assets/css-3.png" alt="Experience icon" class="icon" />
+              <img src="./assets/js.png" alt="Experience icon" class="icon" />
+            </article>
+            <h3>Bachelors Degree in Mechatronics</h3>
+            <p>Asia Pacific University Malaysia</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2021 Oct</h2>
+              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+            </div>
+            <article>
+              <img src="./assets/education.png" alt="education icon" class="education-icon" />
+              <img src="./assets/python.png" alt="Experience icon" class="icon" />
+              <img src="./assets/git.png" alt="Experience icon" class="icon" />
+            </article>
+            <h3>M.Sc. in Artificial Inteligence</h3>
+            <p>Asia Pacific University Malaysia</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2023 Feb</h2>
+              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+            </div>
+            <article>
+              <img src="./assets/suitcase.png" alt="education icon" class="education-icon" />
+              <img src="./assets/c-sharp.png" alt="Experience icon" class="education-icon" />
+              <img src="./assets/internet.png" alt="Experience icon" class="education-icon" />
+              <img src="./assets/postgre.png" alt="Experience icon" class="education-icon" />
+            </article>
+            <h3>Gelora.Id</h3>
+            <p>Junior Software Developer</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2021 Oct</h2>
+              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+            </div>
+            <article>
+              <img src="./assets/education.png" alt="education icon" class="education-icon" />
+              <img src="./assets/python.png" alt="Experience icon" class="icon" />
+              <img src="./assets/git.png" alt="Experience icon" class="icon" />
+            </article>
+            <h3>M.Sc. in Artificial Inteligence</h3>
+            <p>Asia Pacific University Malaysia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/spellchecker.png" alt="spellchecker" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Spellchecker system</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/spell-checker-system'">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/SeventhCoffee.png" alt="Seventh Coffee" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Seventh Coffee</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/SeventhCoffee'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://awee.my.id/seventhcoffee/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:winatoawi@gmail.com">winatoawi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://id.linkedin.com/in/winartowijaya">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="nav-footer">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>Copyright &#169; 2023 Winarto Wijaya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
