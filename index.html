@@ -6,13 +6,15 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Winarto Wijaya</div>
-      <div>
+      <div class="nav-list">
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#timeline">Timeline</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -20,7 +22,7 @@
     </nav>
 
     <!-- hamburger Nav -->
-    <nav id="hamburger-nav">
+    <!-- <nav id="hamburger-nav">
       <div class="logo">Winarto Wijaya</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -29,86 +31,346 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </nav>
-
-    <!-- profile section -->
+    </nav> -->
     <section id="profile">
       <div class="section__pic-container">
-        <!-- <img src="./assets/profile-pic.png" alt="winarto wijaya profile picture" /> -->
-        <img src="./assets/profile-pic-awi.png" alt="winarto wijaya profile picture" style="border-radius: 30%" />
+        <img src="./assets/profile-pic-awi.png" alt="winarto wijaya profile picture" class="profile-pic" style="border-radius: 30%" />
+        <!-- <img src="./assets/profile-pic-awi-ai.png" alt="winarto wijaya profile picture" style="border-radius: 30%" /> -->
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hi, my name is</p>
-        <h1 class="title">Winarto Wijaya</h1>
-        <p class="section__text__p2">Backend Developer</p>
+        <p class="section-text-p1">Hello, I am</p>
+        <h1 class="lead"></h1>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-WinartoWijaya.pdf')">Download CV</button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+          <button data-aos="fade-right" data-aos-duration="1500" class="btn btn-color-2" onclick="window.open('./assets/resume-WinartoWijaya.pdf')">Download CV</button>
+          <button data-aos="fade-left" data-aos-duration="1500" class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon" onclick="location.href='https://id.linkedin.com/in/winartowijaya?trk=public_profile_browsemap'" />
-          <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/winartoawi'" />
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
         </div>
       </div>
     </section>
-    <!-- about section -->
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./index.html#projects'" />
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/pencil.png" alt="Experience icon" class="icon" />
+              <h3>Skill Sets</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/html.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/css-3.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/c-.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/c-sharp.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/python.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/internet.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>ASP.NET MVC</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/postgre.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/git.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Experience icon" class="icon" />
+              <h3>Education</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/mortarboard.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>B.Eng in Mechatronics</h3>
+                    <p>Bachelor's Degree</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/mortarboard.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>M.Sc. in Artificial Intelligence</h3>
+                    <p>Master's Degree</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#timeline'" />
+    </section>
 
+    <!-- about section -->
+    <section id="timeline">
+      <p class="section__text__p1">Chronology</p>
+      <h1 class="title">Timeline</h1>
       <div class="timeline">
-        <div class="container left">
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(245, 200, 200)">
+            <div class="article-detail">
+              <h2>2016 April</h2>
+            </div>
+            <h3>University Enrollment</h3>
+            <p style="color: black">Bachelor of Engineering in Mechatronics</p>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
           <div class="content">
             <div class="article-detail">
-              <h2>2020 Oct</h2>
-              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+              <h2>2018 (Mar - Apr) Robocon Competition</h2>
             </div>
-            <article>
-              <img src="./assets/education.png" alt="education icon" class="education-icon" />
-              <img src="./assets/c-.png" alt="Experience icon" class="icon" />
-              <img src="./assets/html.png" alt="Experience icon" class="icon" />
-              <img src="./assets/css-3.png" alt="Experience icon" class="icon" />
-              <img src="./assets/js.png" alt="Experience icon" class="icon" />
-            </article>
-            <h3>Bachelors Degree in Mechatronics</h3>
+            <h3>Participant in UNITEN Robocon</h3>
+            <div class="article-description">
+              <li>Designing robot framework with the integration of pneumatic system</li>
+            </div>
+          </div>
+        </div>
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(222, 222, 222)">
+            <div class="article-detail">
+              <h2>2019 (Feb - May) Internship Programme</h2>
+            </div>
+            <h3>R&D Intern at Medklinn Air Sterilizer</h3>
+            <div class="article-description">
+              <li>Researched and develop a cost down unit (prototype) on Air Sterilizer unit.</li>
+              <li>Involved with the industrial development and testing of Ozone Water unit.</li>
+            </div>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2019 Oct - Micro-processor Systems Project</h2>
+            </div>
+            <h3>Aquaponic Smart farming system with IoT</h3>
+            <p></p>
+            <div class="article-description">
+              <li>Integrated IoT (IBM-Bluemix) LAN network using Node-red server via Raspberry Pi</li>
+              <li>Sensors and actuators connect to the main microcontroller Photon Particle and Arduino</li>
+            </div>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2020 (Jan - Jun) Capstone Project</h2>
+            </div>
+            <h3>Short-ranged communication device for motorcyclist</h3>
+            <div class="article-description">
+              <li>Communication platform using VoIP (Linphone), Linphone SIP server</li>
+              <li>Provide IoT service dashboard on geo-location and rider`s status</li>
+              <li>Hand-free interface using speech recognition with miniature wind powered turbine</li>
+            </div>
+          </div>
+        </div>
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(187, 246, 234)">
+            <div class="article-detail">
+              <h2>2020 Oct - Graduated</h2>
+            </div>
+            <h3>B.Eng. in Mechatronics</h3>
             <p>Asia Pacific University Malaysia</p>
           </div>
         </div>
-        <div class="container right">
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(245, 200, 200)">
+            <div class="article-detail">
+              <h2>2020 Oct - Enroll</h2>
+            </div>
+            <h3>University Enrollment</h3>
+            <p>M.Sc. in Artificial Inteligence</p>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
           <div class="content">
             <div class="article-detail">
-              <h2>2021 Oct</h2>
-              <img src="./assets/malaysia.png" alt="flag icon" class="flag-icon" />
+              <h2>2021 Jan - Machine Learning Project</h2>
             </div>
-            <article>
-              <img src="./assets/education.png" alt="education icon" class="education-icon" />
-              <img src="./assets/python.png" alt="Experience icon" class="icon" />
-              <img src="./assets/git.png" alt="Experience icon" class="icon" />
-            </article>
+            <h3>Credit Risk/Score prediction models</h3>
+            <div class="article-description">
+              <li>Predicting Credit Risk using SVM, Random Forest, Ensemble method.</li>
+              <li>Regularization with hyperparameter tuning using grid and random search.</li>
+              <li>Performed the models on R-Studio.</li>
+            </div>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2021 May - Natural Language Processing (NLP)</h2>
+            </div>
+            <h3>Spell Checker System</h3>
+            <div class="article-description">
+              <li>Python based program with PYQT Graphical User Interface (GUI)</li>
+              <li>NLTK, Unigram, Bigram, edit distance and stupid backoff algorithms</li>
+            </div>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2021 Oct - Deep learning</h2>
+            </div>
+            <h3>Stock Market Price Prediction</h3>
+            <div class="article-description">
+              <li>Combines with the Long Short-Term Memory RNN model</li>
+              <li>S&P 500 stock market – AAPL, GOOG, MSFT, AMZN</li>
+            </div>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2021 Oct - Deep learning</h2>
+            </div>
+            <h3>Capstone project - Lung Nodule detection and classification</h3>
+            <div class="article-description">
+              <li>Faster R-CNN for lung nodule candidate screening and False Positive Reduction using Dual Path Network with Squeeze and Excitation module</li>
+              <li>Utilizes public LUNA 16 Lung Nodule dataset</li>
+            </div>
+          </div>
+        </div>
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(187, 246, 234)">
+            <div class="article-detail">
+              <h2>2021 Oct - Graduate M.Sc.</h2>
+            </div>
             <h3>M.Sc. in Artificial Inteligence</h3>
             <p>Asia Pacific University Malaysia</p>
           </div>
         </div>
-        <div class="container left">
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(222, 222, 222)">
+            <div class="article-detail">
+              <h2>2022 (July to Dec) Internship</h2>
+            </div>
+            <h3>Indomets - Internship</h3>
+            <p>Intern Software Engineer</p>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
           <div class="content">
             <div class="article-detail">
-              <h2>2023 Feb to Now</h2>
-              <img src="./assets/indonesia.png" alt="flag icon" class="flag-icon" />
+              <h2>2022 (July - Dec) POS System</h2>
             </div>
-            <article>
-              <img src="./assets/suitcase.png" alt="education icon" class="education-icon" />
-              <img src="./assets/c-sharp.png" alt="Experience icon" class="education-icon" />
-              <img src="./assets/internet.png" alt="Experience icon" class="education-icon" />
-              <img src="./assets/postgre.png" alt="Experience icon" class="education-icon" />
-            </article>
-            <h3>Gelora.Id</h3>
+            <h3>Point of Sales System with IMS</h3>
+            <div class="article-description">
+              <li>Developing Point-Of-Sales system based on Excel</li>
+              <li>Perform transactions record, issuing invoices</li>
+              <li>Inventory management using Macros and User-form for GUI</li>
+            </div>
+          </div>
+        </div>
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(222, 222, 222)">
+            <div class="article-detail">
+              <h2>2023 (Feb to Apr) Internship</h2>
+            </div>
+            <h3>Gelora.Id - Internship</h3>
+            <p>Intern Software Engineer</p>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2023 Mar - Maintaining Website</h2>
+            </div>
+            <h3>Maintaining Website</h3>
+            <div class="article-description">
+              <li>Maintaining Web platform using MVC on ASP.NET</li>
+              <li>Optimizing query for effective load time on EF Core which links to SQL database</li>
+            </div>
+          </div>
+        </div>
+        <div class="container right" data-aos="fade-left" data-aos-duration="1000">
+          <div class="content" style="background-color: rgb(187, 246, 234)">
+            <div class="article-detail">
+              <h2>2023 Apr to Now</h2>
+            </div>
+            <h3>Gelora.Id - Fulltime</h3>
             <p>Junior Software Developer</p>
+          </div>
+        </div>
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2023 Apr - Dashboard Web Platform</h2>
+            </div>
+            <h3>Dashboard website Devs</h3>
+            <div class="article-description">
+              <li>Taking in charge of dashboard (Admin side) for making communities to activity scheduling</li>
+              <li>Bug fixing for newly developed features</li>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./index.html#projects'" />
+        <div class="container left" data-aos="fade-right" data-aos-duration="1000">
+          <div class="content">
+            <div class="article-detail">
+              <h2>2023 July to Now - Mobile App API</h2>
+            </div>
+            <h3>Mobile App API</h3>
+            <div class="article-description">
+              <li>Involved in making API function calls for mobile app, taking request and sending response needed for mobile app.</li>
+              <li>Involved in making API function call for Xendit request invoice JSON</li>
+            </div>
           </div>
         </div>
       </div>
@@ -117,27 +379,63 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/spellchecker.png" alt="spellchecker" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Spellchecker system</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/spell-checker-system'">Github</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/SeventhCoffee.png" alt="Seventh Coffee" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Seventh Coffee</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/SeventhCoffee'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://awee.my.id/seventhcoffee/'">Live Demo</button>
-            </div>
-          </div>
+      <div class="project-container">
+        <h2>Dry Air Silica Cost-Down Project</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/Dry-Air-Silica'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>Aquaponic Smart Farming System</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/Aquaponic-system'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>VoIP Communication System for motorcyclist</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn-1" onclick="location.href='https://www.researchgate.net/publication/344590648_Wind_Powered_Short-Range_Communication_Between_Motorcyclist_And_Passenger_With_Alert_System'">
+            Research Paper
+          </button>
+        </div>
+      </div>
+      <div class="project-distinct"></div>
+      <div class="project-container">
+        <h2>Credit Risk / Score Prediction Model</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/Credit-risk-prediction'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>Spellchecker system</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/spell-checker-system'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>Stock Market Univariate Prediction</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/Stock-Market-Prediction'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>Deep Learning Lung Nodule detection and classification</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn-1" onclick="window.open('./assets/dl-lung-nodule.pdf')">Research Paper</button>
+        </div>
+      </div>
+      <div class="project-distinct"></div>
+      <div class="project-container">
+        <h2>Point of Sales System with Excel VBA Macro</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/POS-in-Excel-VBA/tree/main'">Github</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <h2>Seventh Coffee</h2>
+        <div class="project-btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/winartoawi/SeventhCoffee'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://awee.my.id/seventhcoffee/'">Live Demo</button>
         </div>
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#contact'" />
@@ -162,7 +460,9 @@
       <div class="nav-footer">
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#desktop-nav">Profile</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -170,6 +470,19 @@
       </div>
       <p>Copyright &#169; 2023 Winarto Wijaya. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.to(".lead", { duration: 2, text: "Winarto Wijaya" });
+    </script>
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
